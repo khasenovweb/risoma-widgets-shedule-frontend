@@ -10,53 +10,80 @@
     <link rel="stylesheet" href="assets/css/theme.min.css" />
     <link rel="stylesheet" href="assets/css/vendor.min.css" />
     <link rel="stylesheet" href="assets/css/docs.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     
     <div class="container">
-        <h1>Расписание</h1>
-        <table class="w-100 shedule_table bg-light">
-            <tr>
-                <td class="pt-4 pb-5" style="width: 100px;"></td>
-                <td class="pt-4 pb-5 text-center">
-                    <strong>4 декабря</strong> <br>
+        <div class="d-flex mt-5">
+            <!-- Select -->
+            <select class="form-select me-3" autocomplete="off">
+                <option value="">Все направления</option>
+                <option value="4">Thomas Edison</option>
+                <option value="1">Nikola</option>
+                <option value="3">Nikola Tesla</option>
+                <option value="5">Arnold Schwarzenegger</option>
+            </select>
+            <select class="form-select" autocomplete="off">
+                <option value="">Все инструкторы</option>
+                <option value="4">Thomas Edison</option>
+                <option value="1">Nikola</option>
+                <option value="3">Nikola Tesla</option>
+                <option value="5">Arnold Schwarzenegger</option>
+            </select>
+        </div>
+
+        <div class="shedule_header mt-3">
+            <div class="shedule_header_row">
+                <div></div>
+                <div class="shedule_header_col">
+                    <span class="h4">4 декабря </span><br>
                     Понедельник
-                </td>
-                <td class="pt-4 pb-5 text-center">
-                    <strong>5 декабря</strong> <br>
+                </div>
+                <div class="shedule_header_col">
+                    <span class="h4">5 декабря </span><br>
                     Вторник
-                </td>
-                <td class="pt-4 pb-5 text-center">
-                    <strong>6 декабря</strong> <br>
+                </div>
+                <div class="shedule_header_col">
+                    <span class="h4">6 декабря </span><br>
                     Среда
-                </td>
-                <td class="pt-4 pb-5 text-center">
-                    <strong>7 декабря</strong> <br>
+                </div>
+                <div class="shedule_header_col">
+                    <span class="h4">7 декабря </span><br>
                     Четверг
-                </td>
-                <td class="pt-4 pb-5 text-center">
-                    <strong>8 декабря</strong> <br>
+                </div>
+                <div class="shedule_header_col">
+                    <span class="h4">8 декабря </span><br>
                     Пятница
-                </td>
-                <td class="pt-4 pb-5 text-center">
-                    <strong>9 декабря</strong> <br>
+                </div>
+                <div class="shedule_header_col">
+                    <span class="h4">9 декабря </span><br>
                     Суббота
-                </td>
-                <td class="pt-4 pb-5 text-center">
-                    <strong>9 декабря</strong> <br>
+                </div>
+                <div class="shedule_header_col">
+                    <span class="h4">10 декабря </span><br>
                     Воскресенье
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 100px;  vertical-align: middle;" class="text-center">
-                    <strong>08:00</strong>
-                </td>
-                <td class="bg-hover-light">
+                </div>
+            </div>
+        </div>
+        <div class="shedule_body">
+            <div class="shedule_body_row">
+                <div class="shedule_body_col_clock">08:00</div>
+                <div class="shedule_body_col">
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
                     <div class="card mb-1 mt-1" style="border-left-color: rgb(255, 0, 0);">
-                        <div class="card-body p-3">
+                        <div class="card-body p-3 position-relative">
+                            <span class="badge bg-soft-primary text-primary rounded-pill position-absolute top-0 end-0 mt-2 me-2">₽</span>
                             <strong class="mb-0 text-black">Бодрое утро</strong>
                             <p class="mb-0">08:00 - 09:00</p>
+                            <span class="badge bg-soft-warning text-warning">Осталось 5 мест</span>
                             <p class="mb-0">
                                 <i class="bi-map me-1"></i>
                                 Тренажерный зал
@@ -67,8 +94,14 @@
                             </p>
                         </div>
                     </div>
-                </td>
-                <td>
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                </div>
+                <div class="shedule_body_col">
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
                     <div class="card mb-1 mt-1" style="border-left-color: rgb(179, 172, 134);">
                         <div class="card-body p-3">
                             <strong class="mb-0 text-black"> Yoga 1,5 </strong>
@@ -83,8 +116,14 @@
                             </p>
                         </div>
                     </div>
-                </td>
-                <td>
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                </div>
+                <div class="shedule_body_col">
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
                     <div class="card mb-1 mt-1" style="border-left-color: rgb(255, 0, 0);">
                         <div class="card-body p-3">
                             <strong class="mb-0 text-black">  Бодрое утро  </strong>
@@ -99,8 +138,14 @@
                             </p>
                         </div>
                     </div>
-                </td>
-                <td>
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                </div>
+                <div class="shedule_body_col">
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
                     <div class="card mb-1 mt-1" style="border-left-color: rgb(179, 172, 134);">
                         <div class="card-body p-3">
                             <strong class="mb-0 text-black"> Yoga 1,5 </strong>
@@ -115,16 +160,20 @@
                             </p>
                         </div>
                     </div>
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td style="width: 100px;  vertical-align: middle;" class="text-center">
-                    <strong>09:00</strong>
-                </td>
-                <td>
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                </div>
+                <div class="shedule_body_col"></div>
+                <div class="shedule_body_col"></div>
+                <div class="shedule_body_col"></div>
+            </div>
+            <div class="shedule_body_row">
+                <div class="shedule_body_col_clock">09:00</div>
+                <div class="shedule_body_col">
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
                     <div class="card mb-1 mt-1" style="border-left-color: rgb(255, 255, 0);">
                         <div class="card-body p-3">
                             <strong class="mb-0 text-black"> Step Interval </strong>
@@ -138,9 +187,15 @@
                                 Маленкина Анна 
                             </p>
                         </div>
-                    </div>
-                </td>
-                <td>
+                    </div> 
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                </div>
+                <div class="shedule_body_col">
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
                     <div class="card mb-1 mt-1" style="border-left-color: rgb(0, 191, 255);">
                         <div class="card-body p-3">
                             <strong class="mb-0 text-black"> Aqua </strong>
@@ -154,9 +209,15 @@
                                 Маленкина Анна 
                             </p>
                         </div>
-                    </div>
-                </td>
-                <td>
+                    </div> 
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                </div>
+                <div class="shedule_body_col">
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
                     <div class="card mb-1 mt-1" style="border-left-color: rgb(139, 0, 139);">
                         <div class="card-body p-3">
                             <strong class="mb-0 text-black"> Bums + Press </strong>
@@ -170,9 +231,15 @@
                                 Маленкина Анна 
                             </p>
                         </div>
-                    </div>
-                </td>
-                <td>
+                    </div> 
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                </div>
+                <div class="shedule_body_col">
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
                     <div class="card mb-1 mt-1" style="border-left-color: rgb(0, 191, 255);">
                         <div class="card-body p-3">
                             <strong class="mb-0 text-black"> Aqua </strong>
@@ -186,9 +253,15 @@
                                 Маленкина Анна 
                             </p>
                         </div>
-                    </div>
-                </td>
-                <td>
+                    </div> 
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                </div>
+                <div class="shedule_body_col">
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
                     <div class="card mb-1 mt-1" style="border-left-color: rgb(139, 0, 139);">
                         <div class="card-body p-3">
                             <strong class="mb-0 text-black"> Body Sculpt </strong>
@@ -202,9 +275,15 @@
                                 Маленкина Анна 
                             </p>
                         </div>
-                    </div>
-                </td>
-                <td>
+                    </div> 
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                </div>
+                <div class="shedule_body_col">
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
                     <div class="card mb-1 mt-1" style="border-left-color: rgb(179, 172, 134);">
                         <div class="card-body p-3">
                             <strong class="mb-0 text-black">Yoga 1,5</strong>
@@ -218,16 +297,232 @@
                                 Маленкина Анна 
                             </p>
                         </div>
+                    </div> 
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                </div>
+                <div class="shedule_body_col"></div>
+            </div>
+            <div class="shedule_body_row">
+                <div class="shedule_body_col_clock">10:00</div>
+                <div class="shedule_body_col">
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                    <div class="card mb-1 mt-1" style="border-left-color: rgb(255, 255, 0);">
+                        <div class="card-body p-3">
+                            <strong class="mb-0 text-black"> Step Interval </strong>
+                            <p class="mb-0"> 09:00 - 10:00 </p>
+                            <p class="mb-0">
+                                <i class="bi-map me-1"></i>
+                                Тренажерный зал   
+                            </p>
+                            <p class="mb-0">
+                                <i class="bi-people me-1"></i>
+                                Маленкина Анна 
+                            </p>
+                        </div>
+                    </div> 
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                    <div class="card mb-1 mt-1" style="border-left-color: rgb(179, 172, 134);">
+                        <div class="card-body p-3">
+                            <strong class="mb-0 text-black"> DINAMIC STRETCHING </strong>
+                            <p class="mb-0"> 10:00 - 11:00 </p>
+                            <p class="mb-0 fs-xs">
+                                <i class="bi-map me-1"></i>
+                                Зал групповых занятий 1   
+                            </p>
+                            <p class="mb-0">
+                                <i class="bi-people me-1"></i>
+                                Маленкина Анна 
+                            </p>
+                        </div>
                     </div>
-                </td>
-            </tr>
-        </table>
+                    <div class="card mb-1 mt-1" style="border-left-color: rgb(0, 191, 255);">
+                        <div class="card-body p-3">
+                            <strong class="mb-0 text-black"> Aqua </strong>
+                            <p class="mb-0"> 10:00 - 10:45 </p>
+                            <p class="mb-0">
+                                <i class="bi-map me-1"></i>
+                                Бассейн   
+                            </p>
+                            <p class="mb-0">
+                                <i class="bi-people me-1"></i>
+                                Маленкина Анна 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shedule_body_col">
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                    <div class="card mb-1 mt-1" style="border-left-color: rgb(0, 191, 255);">
+                        <div class="card-body p-3">
+                            <strong class="mb-0 text-black"> Aqua </strong>
+                            <p class="mb-0"> 09:00 - 09:45 </p>
+                            <p class="mb-0">
+                                <i class="bi-map me-1"></i>
+                                Бассейн   
+                            </p>
+                            <p class="mb-0">
+                                <i class="bi-people me-1"></i>
+                                Маленкина Анна 
+                            </p>
+                        </div>
+                    </div> 
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                </div>
+                <div class="shedule_body_col">
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                    <div class="card mb-1 mt-1" style="border-left-color: rgb(139, 0, 139);">
+                        <div class="card-body p-3">
+                            <strong class="mb-0 text-black"> Bums + Press </strong>
+                            <p class="mb-0"> 09:00 - 10:00 </p>
+                            <p class="mb-0">
+                                <i class="bi-map me-1"></i>
+                                Зал групповых занятий 1   
+                            </p>
+                            <p class="mb-0">
+                                <i class="bi-people me-1"></i>
+                                Маленкина Анна 
+                            </p>
+                        </div>
+                    </div> 
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                </div>
+                <div class="shedule_body_col">
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                    <div class="card mb-1 mt-1" style="border-left-color: rgb(0, 191, 255);">
+                        <div class="card-body p-3">
+                            <strong class="mb-0 text-black"> Aqua </strong>
+                            <p class="mb-0"> 09:00 - 09:45 </p>
+                            <p class="mb-0">
+                                <i class="bi-map me-1"></i>
+                                Бассейн   
+                            </p>
+                            <p class="mb-0">
+                                <i class="bi-people me-1"></i>
+                                Маленкина Анна 
+                            </p>
+                        </div>
+                    </div> 
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                </div>
+                <div class="shedule_body_col">
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                    <div class="card mb-1 mt-1" style="border-left-color: rgb(139, 0, 139);">
+                        <div class="card-body p-3">
+                            <strong class="mb-0 text-black"> Body Sculpt </strong>
+                            <p class="mb-0"> 09:00 - 10:00 </p>
+                            <p class="mb-0">
+                                <i class="bi-map me-1"></i>
+                                Зал групповых занятий 1   
+                            </p>
+                            <p class="mb-0">
+                                <i class="bi-people me-1"></i>
+                                Маленкина Анна 
+                            </p>
+                        </div>
+                    </div> 
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                </div>
+                <div class="shedule_body_col">
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                    <div class="card mb-1 mt-1" style="border-left-color: rgb(179, 172, 134);">
+                        <div class="card-body p-3">
+                            <strong class="mb-0 text-black">Yoga 1,5</strong>
+                            <p class="mb-0"> 09:00 - 10:00 </p>
+                            <p class="mb-0 fs-xs">
+                                <i class="bi-map me-1"></i>
+                                Зал групповых занятий 1   
+                            </p>
+                            <p class="mb-0">
+                                <i class="bi-people me-1"></i>
+                                Маленкина Анна 
+                            </p>
+                        </div>
+                    </div> 
+                    <!-- ----------------------------------- -->
+                    <!-- ------------- card ---------------- -->
+                    <!-- ----------------------------------- -->
+                </div>
+                <div class="shedule_body_col">
+                    <div class="card mb-1 mt-1" style="border-left-color: rgb(179, 172, 134);">
+                        <div class="card-body p-3">
+                            <strong class="mb-0 text-black"> DINAMIC STRETCHING </strong>
+                            <p class="mb-0"> 10:00 - 11:00 </p>
+                            <p class="mb-0 fs-xs">
+                                <i class="bi-map me-1"></i>
+                                Зал групповых занятий 1   
+                            </p>
+                            <p class="mb-0">
+                                <i class="bi-people me-1"></i>
+                                Маленкина Анна 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
     <style>
+        * {
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .shedule_header_row {
+            display: grid;
+            grid-template-columns: 70px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+        .shedule_header_col {
+            text-align: center;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .shedule_body_row {
+            display: grid;
+            grid-template-columns: 70px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+            padding: 5px;
+        }
+        .shedule_body_row:nth-child(odd) {
+            background-color: #f9f9f9;
+
+        }
+        .shedule_body_col_clock {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+
+
         .shedule_table td {
-            width: 12.5%;
+            /* width: 12.5%; */
             border-left: solid 1px rgb(212, 212, 212);
             border-right: solid 1px rgb(212, 212, 212);
             padding-left: 5px;
@@ -236,12 +531,19 @@
         }
         .shedule_table tr {
             border-bottom: solid 1px rgb(212, 212, 212);
+            border-top: solid 1px rgb(212, 212, 212);
+        }
+        .shedule_table td.shedule_table_clock {
+            max-width: 100px;
+            width: 100px;
         }
         .shedule_table .card {
             border-left: 4px solid;
         }
+        .shedule_body .card {
+            border-left: 4px solid;
+        }
 
-        .shedule_table th td {}
     </style>
 
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
