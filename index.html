@@ -17,25 +17,46 @@
 
 </head>
 
-<body>
+<body class="pt-5">
     
     <div class="container">
-        <div class="d-flex mt-5">
-            <!-- Select -->
-            <select class="form-select me-3" autocomplete="off">
-                <option value="">Все направления</option>
-                <option value="4">Thomas Edison</option>
-                <option value="1">Nikola</option>
-                <option value="3">Nikola Tesla</option>
-                <option value="5">Arnold Schwarzenegger</option>
-            </select>
-            <select class="form-select" autocomplete="off">
-                <option value="">Все инструкторы</option>
-                <option value="4">Thomas Edison</option>
-                <option value="1">Nikola</option>
-                <option value="3">Nikola Tesla</option>
-                <option value="5">Arnold Schwarzenegger</option>
-            </select>
+        <div class="row">
+            <div class="col-6">
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-white me-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Mon Dec 11 2023" data-fc-today="">Сегодня</button>
+        
+                    <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm btn-no-focus rounded-circle me-1" data-fc-prev-month="" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Previous month" data-bs-original-title="Previous month">
+                      <i class="bi-chevron-left"></i>
+                    </button>
+        
+                    <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm btn-no-focus rounded-circle ms-1" data-fc-next-month="" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Next month" data-bs-original-title="Next month">
+                      <i class="bi-chevron-right"></i>
+                    </button>
+        
+                    <div class="ms-3">
+                      <h4 class="h3 mb-0" data-fc-title="">4 Декабря – 10 Декабря 2023</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="d-flex">
+                    <!-- Select -->
+                    <select class="form-select me-3" autocomplete="off">
+                        <option value="">Все направления</option>
+                        <option value="4">Thomas Edison</option>
+                        <option value="1">Nikola</option>
+                        <option value="3">Nikola Tesla</option>
+                        <option value="5">Arnold Schwarzenegger</option>
+                    </select>
+                    <select class="form-select" autocomplete="off">
+                        <option value="">Все инструкторы</option>
+                        <option value="4">Thomas Edison</option>
+                        <option value="1">Nikola</option>
+                        <option value="3">Nikola Tesla</option>
+                        <option value="5">Arnold Schwarzenegger</option>
+                    </select>
+                </div>
+            </div>
         </div>
 
         <div class="shedule_header mt-3">
